@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link
+rel="stylesheet"
+href="finalproject.css">
+
+<script
+type="text/javascript"
+src="finalproject.js">
+</script>
+
+<html>
+  <head>
+    <title>Make a Decision</title>
+    <link rel="stylesheet" href="finalproject.css">
+    <script type="text/javascript" src="finalproject.js"> </script>
+    <script src="http://api.rottentomatoes.com/api/public/v1.0.json?apikey=4bhjp3ueqj7vpvprfpdna6qy"></script>
+
+  </head>
+  <body>
+    <div id="homepage">
+      <h1 id="hometitle">Make a Decision</h1>
+      <h4 id="homedescrip">Get on with life and just CHOOSE already</h4>
+
+      <input
+      id = "movieparam"
+      class = "button"
+      type = "button"
+      onclick = "openmovieparampage()"
+      value = "Movies">
+
+      <input
+      id = "activparam"
+      class = "button"
+      type = "button"
+      onclick = "openactivparampage()"
+      value = "Activities">
+
+      <input
+      id = "foodparam"
+      class = "button"
+      type = "button"
+      onclick = "openfoodparampage()"
+      value = "Food">
+
+      <input
+      id = "youchooseparam"
+      class = "button"
+      type = "button"
+      onclick = "openyouchooseparampage()"
+      value = "Your Choices">
+    </div>
+
+    <div id="movieparampage">
+      <h1 id="movieparamhead">Movie Choices</h1>
+      <h4 id="movieloc">Location</h4>
+      <input name="movielocparam" type="text">Input zip code here.</input>
+      <h4 id="moviegenreparamin">Genre</h4>
+      <select name="genres">
+        <option value="Action">Action</option>
+        <option value="Horror">Horror</option>
+        <option value="Romance">Romance</option>
+        <option value="Comedy">Comedy</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+        <option value="Drama">Drama</option>
+        <option value="Animated">Animated</option>
+        <option value="Any">Any Genre</option>
+      </select>
+      <h4 id="movierateparamin">Ratings</h4>
+      <select name="ratings">
+        <option value="G">G</option>
+        <option value="PG">PG</option>
+        <option value="PG13">PG-13</option>
+        <option value="R">R</option>
+        <option value="NC17">NC-17</option>
+        <option value="NR">NR</option>
+        <option value="Any">Any</option>
+      </select>
+      <div>
+        <input
+        id = "choose"
+        class = "button"
+        type = "button"
+        onclick = "choosemovie()"
+        value = "CHOOSE">
+      </div>
+    </div>
+  </body>
+  <h1>
+</html>
