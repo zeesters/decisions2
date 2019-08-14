@@ -16,7 +16,7 @@ function choosemovie(){
   var query = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=4bhjp3ueqj7vpvprfpdna6qy";
   // query = query.replace(/ /g, "%20")
 
-  moviesRequest = new XMLHttpRequest();
+  moviesRequest = new HTTPSRequest();
   moviesRequest.open('GET', query, true);
   moviesRequest.onload = processmoviesrequest
 
