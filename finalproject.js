@@ -22,10 +22,10 @@ function choosemovie(){
 
 
 
-  // alert("Everything: " + moviesRequest);
-  // alert("ready State:   " + moviesRequest.readyState);
-  // alert("status:    " + moviesRequest.status);
-  // alert("response:   " + moviesRequest.responseText);
+  alert("Everything: " + moviesRequest);
+  alert("ready State:   " + moviesRequest.readyState);
+  alert("status:    " + moviesRequest.status);
+  alert("response:   " + moviesRequest.responseText);
   moviesRequest.send()
 }
 
