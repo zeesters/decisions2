@@ -1,0 +1,22 @@
+.button {    background-color: #FFD500;
+    color: black;
+    padding: 15px 32px;
+    text-align: right;
+    font-size: 16px;
+    border-radius: 50%;
+    webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+  }
+
+
+body {
+  /* background-color:white; */
+  color:navy;
+  padding: 40px;
+  text-align:center;
+  font-size: 60px;
+  font-weight: bolder;
+  /* background-image: linear-gradient(gray,silver,white); */
+  background-image: url("https://walls4u.co.uk/app/uploads/2018/10/Fotolia_200932825_Subscription_Monthly.jpg");
+  font-family: 'Aclonica';
+}
