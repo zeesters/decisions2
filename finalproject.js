@@ -13,7 +13,7 @@ function openmovieparampage() {
 
 
 function choosemovie(){
-  var query = "http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=4bhjp3ueqj7vpvprfpdna6qy";
+  var query = "/discover/movie?primary_release_date.gte=2014-09-15&primary_release_date.lte=2014-10-22";
   // query = query.replace(/ /g, "%20")
 
   moviesRequest = new XMLHttpRequest();
@@ -26,7 +26,7 @@ function choosemovie(){
   // alert("ready State:   " + moviesRequest.readyState);
   // alert("status:    " + moviesRequest.status);
   // alert("response:   " + moviesRequest.responseText);
-  moviesRequest.send();
+  moviesRequest.send()
 }
 
 function processmoviesrequest() {
